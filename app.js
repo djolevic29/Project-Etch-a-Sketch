@@ -8,7 +8,7 @@ let cells = document.getElementsByClassName("cell");
 function defaultGrid() {
     makeRows(16);
     makeColumns(16);
-};
+}
 
 // Takes (rows, columns) input and makes a grid
 function makeRows(rowNum) {
@@ -27,5 +27,6 @@ function makeColumns(cellNum) {
             let newCell = document.createElement("div");
             rows[j].appendChild(newCell).className = "cell";
         };
+
     };
 };
