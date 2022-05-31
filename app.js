@@ -8,12 +8,12 @@ let cells = document.getElementsByClassName("cell");
 function defaultGrid() {
     makeRows(16);
     makeColumns(16);
-}
+};
 
-// Takes (rows, columns) input and makes a grid 
+// Takes (rows, columns) input and makes a grid
 function makeRows(rowNum) {
-    
-    // Creates Rows
+
+    // Creates rows
     for (r = 0; r < rowNum; r++) {
         let row = document.createElement("div");
         container.appendChild(row).className = "gridRow";
